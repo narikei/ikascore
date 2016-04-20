@@ -262,7 +262,7 @@ class CaptureController: UIViewController, AVCaptureVideoDataOutputSampleBufferD
 
     internal func tweet() {
         myComposeView = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        myComposeView.setInitialText("スプラトゥーン対戦結果：\(winCount)勝\(loseCount)敗 #スプラトゥーン #ikascore")
+        myComposeView.setInitialText("スプラトゥーン対戦結果：\(winCount)勝\(loseCount)敗 #スプラトゥーン #イカスコア")
         myComposeView.addImage(scoreImage)
         self.presentViewController(myComposeView, animated: true, completion: nil)
     }
